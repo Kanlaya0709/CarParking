@@ -9,37 +9,39 @@
 
     <TextView
             android:text="Car Parking "
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/textView" app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            android:textSize="24sp"/>
+            android:textSize="36sp" android:background="#81022A" android:fontFamily="@font/roboto"
+            android:textColor="#E2D5D1" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"
+            android:textAlignment="center"/>
     <Button
-            android:text="Button"
+            android:text="ว่าง"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/park1_button" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/park2_button"
             android:layout_marginStart="8dp"
-            app:layout_constraintBaseline_toBaselineOf="@+id/park2_button"/>
+            app:layout_constraintBaseline_toBaselineOf="@+id/park2_button" android:background="#CC3A6A"/>
     <Button
-            android:text="Button"
+            android:text="ว่าง"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/park2_button"
             app:layout_constraintStart_toEndOf="@+id/park1_button" app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintEnd_toStartOf="@+id/park3_button" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/textView"/>
+            app:layout_constraintTop_toBottomOf="@+id/textView" android:background="#CC3A6A"/>
     <Button
-            android:text="Button"
+            android:text="ว่าง"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/park3_button"
             app:layout_constraintStart_toEndOf="@+id/park2_button" app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-            app:layout_constraintBaseline_toBaselineOf="@+id/park2_button"/>
+            app:layout_constraintBaseline_toBaselineOf="@+id/park2_button" android:background="#CC3A6A"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -79,7 +81,8 @@
             android:id="@+id/update_button"
             app:layout_constraintBaseline_toBaselineOf="@+id/cancel_button"
             app:layout_constraintStart_toStartOf="@+id/park1_button" app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintEnd_toStartOf="@+id/cancel_button" android:layout_marginStart="8dp"/>
+            app:layout_constraintEnd_toStartOf="@+id/cancel_button" android:layout_marginStart="8dp"
+            android:background="#CF92A7"/>
     <Button
             android:text="ยกเลิก"
             android:layout_width="wrap_content"
@@ -87,6 +90,7 @@
             android:id="@+id/cancel_button"
             app:layout_constraintStart_toEndOf="@+id/update_button" app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintEnd_toEndOf="@+id/park3_button" android:layout_marginEnd="8dp"
-            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/name_dirver"/>
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/name_dirver"
+            android:background="#CF92A7"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,3 @@
 package com.example.carpacking
 
-data class Car(var id : String , var brand : String , var name: String)
+data class Car(var id : String , var brand : String , var name: String,var status : Boolean)

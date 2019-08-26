@@ -179,9 +179,9 @@ class MainActivity : AppCompatActivity() {
         val cancelButton = findViewById<Button>(R.id.cancel_button)
 
         if(car3.status == true ){
-            idcarEditText.setText(car2.id)
-            brandcarEditText.setText(car2.brand)
-            namedirverEditText.setText(car2.name)
+            idcarEditText.setText(car3.id)
+            brandcarEditText.setText(car3.brand)
+            namedirverEditText.setText(car3.name)
         }else if (checkEditText == true){
             idcarEditText.text.clear()
             brandcarEditText.text.clear()
@@ -240,9 +240,9 @@ class MainActivity : AppCompatActivity() {
         val cancelButton = findViewById<Button>(R.id.cancel_button)
 
 
-        idcarEditText.text.clear()
-        brandcarEditText.text.clear()
-        namedirverEditText.text.clear()
+        car1.id = " "
+        car1.brand = " "
+        car1.name = " "
 
         idcarEditText.visibility = View.GONE
         brandcarEditText.visibility = View.GONE
@@ -252,6 +252,8 @@ class MainActivity : AppCompatActivity() {
 
 
         park1_button.text ="ว่าง"
+        checkEditText = false
+        view.invalidate()
 
     }
     private fun cancel2 (view: View) {
@@ -261,9 +263,9 @@ class MainActivity : AppCompatActivity() {
         val updateButton = findViewById<Button>(R.id.update_button)
         val cancelButton = findViewById<Button>(R.id.cancel_button)
 
-        idcarEditText.text.clear()
-        brandcarEditText.text.clear()
-        namedirverEditText.text.clear()
+        car2.id = " "
+        car2.brand = " "
+        car2.name = " "
 
         idcarEditText.visibility = View.GONE
         brandcarEditText.visibility = View.GONE
@@ -272,6 +274,8 @@ class MainActivity : AppCompatActivity() {
         cancelButton.visibility = View.GONE
 
         park2_button.text ="ว่าง"
+        checkEditText = false
+        view.invalidate()
 
     }
     private fun cancel3 (view: View) {
@@ -281,9 +285,9 @@ class MainActivity : AppCompatActivity() {
         val updateButton = findViewById<Button>(R.id.update_button)
         val cancelButton = findViewById<Button>(R.id.cancel_button)
 
-        idcarEditText
-        brandcarEditText.getText().clear()
-        namedirverEditText.getText().clear()
+        car3.id = " "
+        car3.brand = " "
+        car3.name = " "
 
         idcarEditText.visibility = View.GONE
         brandcarEditText.visibility = View.GONE
@@ -292,6 +296,9 @@ class MainActivity : AppCompatActivity() {
         cancelButton.visibility = View.GONE
 
         park3_button.text ="ว่าง"
+
+        checkEditText = false
+        view.invalidate()
     }
 
 }
